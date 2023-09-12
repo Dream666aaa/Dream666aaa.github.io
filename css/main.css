@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #bac3f5;
+  background: #ffafff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2571,7 +2571,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 body {
-  background: url("/images/lover.webp");
+  background: url("/images/lover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
