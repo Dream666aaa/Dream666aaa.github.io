@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #67a213;
+  background: #f5c33e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2703,4 +2703,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
+}
+.btn {
+  border: 2px solid rgba(135,206,250,0.565);
+}
+#menu li:hover {
+  background: url("/images/pink.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
