@@ -13,14 +13,14 @@
       
       <categories>
           
-          <category> 摘录 </category>
+          <category> Linux </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Linux </tag>
+            <tag> 摘录 </tag>
             
             <tag> 命令 </tag>
             
@@ -31,23 +31,25 @@
     
     
     <entry>
-      <title>Markdown初级用法</title>
-      <link href="/2023/09/13/markdown/"/>
-      <url>/2023/09/13/markdown/</url>
+      <title>技术栈</title>
+      <link href="/2023/09/16/technology%20stack/"/>
+      <url>/2023/09/16/technology%20stack/</url>
       
-        <content type="html"><![CDATA[<p>欢迎阅读该博客，希望你能有所收获！</p><h2 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h2><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档；<br>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建；<br>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档；<br>Markdown 编写的文档后缀为 .md或.markdown；<br>Markdown 能被使用来撰写电子书，如：Gitbook；<br>当今许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、个人博客等。<br>练习方式：</p><p>线上练习：stackedit</p><p>线下安装：typora永久激活版</p><p>提取密码：YYDS</p><p>###一、标题 ###<br>语法如下：</p><p>一个“#”代表：一级标题</p><p>二个“#”代表：二级标题</p><p>……</p><p>六个“#”代表：六级标题</p><p>注意：使用时，“#”后要加上空格才生效</p><p>作用：重要性等级排序</p><h3 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h3><p>2.1 字体<br>语法如下：</p><p>1.一对“*”或“_”代表：斜体</p><p>效果：俊强</p><p>2.一对“**”或“__”代表：加粗</p><p>效果：俊强</p><p>3.一对“***”或“___”代表：斜体+加粗</p><p>效果：俊强</p><p>注意：使用时，用“*”或“_”将要加斜体或加粗的文字包裹起来才生效</p><p>作用：提示、强调、说明和区别，3种方式选1种就可</p><p>2.2 分割线<br>如下：</p><p>三个及其以上“*”或“-”代表：分割线</p><p>效果如下：</p><p>注意：使用时，除空格外一行内不能有其他字符</p><p>作用：能够让正文与其他内容清晰体现，以免造成阅读混乱</p><p>2.3 删除线<br>语法：一对“~~”代表：删除线</p><p>效果：俊强</p><p>作用：对旧的内容进行删除和替换</p><p>使用场景：想换博客域名了，可以这样做：旧博客域名→新博客域名</p><p>2.4 下划线<br>语法：一个u标签“<u></u>”代表：下划线</p><p>效果：俊强</p><p>作用：强调文字引起注意</p><p>2.5 脚注<br>语法：“[^]”代表：脚注</p><p>效果：[^俊强]</p><p>作用：对文本内容的补充说明</p><h3 id="三、列表"><a href="#三、列表" class="headerlink" title="三、列表"></a>三、列表</h3><p>3.1 无序列表<br>语法：一个“*”或一个“+”或一个“-”代表：无序列表</p><p>效果如下：</p><p>俊强<br>玉树<br>临风<br>注意：使用时，“*”后要加上空格才生效</p><p>作用：无序列出内容，直观明了</p><p>3.2 有序列表<br>语法：数字“1.2.3.”代表：有序列表</p><p>效果如下：</p><p>俊强<br>。。。<br>。。。<br>注意：使用时，“1.”后要加上空格才生效</p><p>作用：按顺序列出内容，直观明了</p><p>3.3 列表嵌套<br>语法：有序列表和无序列表混合使用</p><p>效果：</p><p>俊强<br>性格好<br>情绪稳定<br>。。。<br>其他<br>。。。<br>。。。<br>。。。<br>###四、区块 ###<br>语法：一个“&gt;”代表：区块</p><p>效果如下：</p><p>俊强</p><p>好帅</p><p>洒脱</p><p>注意：使用时，“&gt;”后要加上空格才生效，它的效果是4个空格或者一个制表符（Tab键）</p><p>使用场景：在Linux命令、短代码中使用</p><p>4.1 区块列表嵌套<br>语法：区块中嵌套有序列表再嵌套无序列表</p><p>效果如下：</p><p>俊强<br>沉着<br>泠静<br>其他<br>。。。<br>。。。<br>。。。<br>。。。<br>。。。<br>4.2 列表区块嵌套<br>语法：有序列表或无序列表中嵌套区块</p><p>俊强</p><p>帅哥</p><p>洒脱</p><p>其他</p><p>。。。</p><p>。。。</p><p>。。。</p><p>。。。</p><p>。。。</p><p>###五、代码块 ###<br>5.1 Python代码块<br>语法：一对“&#96;&#96;&#96;”代表：代码块</p><p>PYTHON<br>1<br>print(“Hello Markdown!”)<br>注意：使用时，“&#96;&#96;&#96;”后要加上python代表是python代码</p><p>5.2 Java代码块<br>JAVA<br>1<br>2<br>3<br>pubic static void main(String[] args) {<br>  System.out.println(“Hello Markdown!”);<br>}<br>注意：使用时，“&#96;&#96;&#96;”后要加上java代表是java代码</p><p>###六、链接 ###<br>6.1 普通链接<br>方式一<br>语法：“&lt;&gt;”代表：尖括号直接填入链接地址即可</p><p>效果：<a href="https://ljqyyds.com/">https://ljqyyds.com</a></p><p>方式二<br>语法：“<a href=""></a>”代表：中括号填入文字，圆括号填入链接地址</p><p>示例：[J.qiang &amp; 博客]+(<a href="https://ljqyyds.com/">https://ljqyyds.com</a>)</p><p>效果：J.qiang &amp; 博客</p><p>6.2 高级链接<br>方式一：变量<br>语法：“[][]”代表：第一中括号填入文字，第二个中括号填入变量名，最后再为变量名赋值即可</p><p>示例：</p><p>第一中括号写为 [百度]</p><p>第二个中括号写为 [baidu_name]</p><p>变量赋值 [baidu_name]: <a href="https://baidu.com/">https://baidu.com</a></p><p>效果：这是百度网址：百度</p><p>方式二：图片<br>语法：“<a href=""><img src="/"></a>”代表：链接语法嵌套图片语法，第一中括号填入文字，第一个圆括号填入图片地址，第二个圆括号填入链接地址</p><p>效果：</p><p>###七、图片 ###<br>语法：“<img src="/">”代表：图片，第一中括号填入文字，第二个圆括号填入图片地址</p><p>示例：</p><p>###八、表格 ###<br>语法：连续“|”代表：分隔不同的单元格，使用连续“-”代表：分隔表头与其他行</p><p>示例：</p><p>姓名性别年龄<br>俊强男24<br>其他人无无<br>注意：有3种对齐方式，冒号在哪边就是向哪边对齐</p><p>-: 设置内容或标题栏右对齐<br>:- 设置内容或标题栏左对齐<br>:-: 设置内容或标题栏居中对齐<br>###九、高级用法 ###<br>9.1 转义<br>语法：一个“\”代表：转义</p><p>作用：Markdown使用了很多特殊符号来表示特定的意义，需要显示特定的符号时使用转义字符即可</p><p>示例：<strong>加粗</strong></p><p>注意：以下普通符号支持转义</p><p>加 + 减 - 乘 * 井号 #<br>小括号 () 方括号 [] 花括号 {} 尖括号&lt;&gt;<br>反斜杠 \ 反引号 &#96; 叹号 ! 下滑线 _ 英文句号 .<br>9.2 数学公式（博客内显示有点问题）<br>语法：一对“$$”代表：数学公式用美元符号包裹起来</p><p>示例：</p><p>分式：二分之一<br>$$<br>\frac{1}{2}<br>$$</p><p>方程式<br>$$<br>\begin{cases}<br>a_{0}+a_{1}x_{0}+…+a_{n}x_{0}^{n}&#x3D;y_{0} <br>a_{0}+a_{1}x_{1}+…+a_{n}x_{1}^{n}&#x3D;y_{1} <br>\cdots<br>a_{0}+a_{1}x_{n}+…+a_{n}x_{n}^{n}&#x3D;y_{n}<br>\end{cases}<br>$$</p><p>###十、其他 ###<br>10.1 改变字体颜色和大小<br>颜色<br>语法：“<font color=颜色>内容</font>”代表：font标签里加入文字内容即可</p><p>效果：俊强、俊强</p><p>大小<br>语法：“<font size=数字>内容</font>”</p><p>效果：俊强</p><p>10.2 取消超链接显示<br>语法：一对“&#96;”代表：用一对反引号将超链接地址包裹起来</p><p>示例：<a href="https://ljqyyds.com/">https://ljqyyds.com</a></p><p>作者: J.qiang<br>链接: <a href="http://ljqyyds.com/2023/03/31/%E7%AC%AC4%E7%AF%87%EF%BC%9AMarkdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/">http://ljqyyds.com/2023/03/31/%E7%AC%AC4%E7%AF%87%EF%BC%9AMarkdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/</a><br>来源: J.qiang &amp; 博客<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="先放一张技术栈思维导图："><a href="#先放一张技术栈思维导图：" class="headerlink" title="先放一张技术栈思维导图："></a>先放一张技术栈思维导图：</h3><p><img src="https://picx.zhimg.com/80/v2-22f56d054f6abc3b0683e95a6a3f5150_1440w.webp?source=1940ef5c"></p><p>什么是技术栈？</p><p>开发一个普通管理系统，会用到SprinBoot+MyBatis+Spring+Mysql+Redis+RabbitMq+Nginx+Vue+Shiro+html+等等，这些技术合起来就可以称为技术栈。</p><p>大致分为：前端、后端、中间件、数据库和工具。</p><p>内容比较多工具相关内容在这里不做介绍了</p><h2 id="一、前端"><a href="#一、前端" class="headerlink" title="一、前端"></a>一、前端</h2><h4 id="1、JSP"><a href="#1、JSP" class="headerlink" title="1、JSP"></a>1、JSP</h4><p>JSP全称Java Server Pages，是一种动态网页开发技术。它使用JSP标签在HTML网页中插入Java代码。</p><p>JSP本质上是一个Servlet，主要用于实现JavaWeb应用程序的用户界面部分。</p><html>    <head>           <title>第一个 JSP 程序</title>    </head>    <body>           <%                  out.println("Hello World！");           %>    </body></html><h4 id="2、前端框架"><a href="#2、前端框架" class="headerlink" title="2、前端框架"></a>2、前端框架</h4><p>DWZ、EasyUI、EXT、BootStrap、KendoUI都是基于基于HTML、CSS、JavaScript&#x2F;jQuery的一些富文本客户端UI框架，在当时简直是后端开发人员的福音。</p><p>这些框架最大的特点就是官网上提供了各种组件的使用方法，后端人员只要套到JSP页面中，进行数据渲染即可。</p><p>这些UI框架风格基本已经固定，更适合开发一些管理类系统，都包括：强大的数据源，通用的拖拉（Drag-and-Drop）功能，模板，和UI控件。</p><h4 id="3、DWZ"><a href="#3、DWZ" class="headerlink" title="3、DWZ"></a>3、DWZ</h4><p>是中国人自己开发的基于jQuery实现的Ajax RIA开源框架，设计目标是简单实用，快速开发，降低Ajax开发成本。</p><h4 id="4、EasyUI"><a href="#4、EasyUI" class="headerlink" title="4、EasyUI"></a>4、EasyUI</h4><p>Easyui是一种基于jQuery的用户界面插件集合，为创建现代化，互动，JavaScript应用程序，提供必要的功能。</p><p>使用Easyui你不需要写很多代码，你只需要通过编写一些简单HTML标记，就可以定义用户界面，为网页开发的时间和规模。</p><h4 id="5、BootStrap"><a href="#5、BootStrap" class="headerlink" title="5、BootStrap"></a>5、BootStrap</h4><p>Bootstrap，来自Twitter，是目前很受欢迎的前端框架。Bootstrap是基于 HTML、CSS、JavaScript的，它简洁灵活，使得Web开发更加快捷。</p><h4 id="6、HTML"><a href="#6、HTML" class="headerlink" title="6、HTML"></a>6、HTML</h4><p>前端框架都是基于HTML的，所以你需要掌握Css、JavaScript、jquery基础。</p><h4 id="7、Vue"><a href="#7、Vue" class="headerlink" title="7、Vue"></a>7、Vue</h4><p>Vue是一种渐进式JavaScript框架，完美融合了第三方插件和UI组件库，它和jQuery最大的区别在于，Vue无需开发人员直接操作DOM节点，就可以改变页面渲染内容，在应用开发者具有一定的HTML、CSS、JavaScript的基础上，能够快速上手，开发出优雅、简洁的应用程序模块。</p><h2 id="二、后端"><a href="#二、后端" class="headerlink" title="二、后端"></a>二、后端</h2><h4 id="1、Struts"><a href="#1、Struts" class="headerlink" title="1、Struts"></a>1、Struts</h4><p>Struts是Apache基金会的一个开源项目，广泛应用于大型互联网企业、政府、金融机构等网站建设，并作为网站开发的底层模板使用。</p><p>一个是Stuts1 ，一个是Stuts2。技术方面，Stuts1有个核心控制器，但是只提供了一个接口，也就是execute，还要配置action、form之类的，很麻烦，所以依赖性比较强；</p><p>而Stuts2是针对拦截器开发的，也就是所谓的AOP思想，可以配置多个action，用起来比较方便，但是因为请求之前的拦截器有一些注入的操作，速度相对Stuts1来说慢一点。</p><h4 id="2、Spring"><a href="#2、Spring" class="headerlink" title="2、Spring"></a>2、Spring</h4><p>Spring框架是个轻量级的Java EE框架。所谓轻量级，是指不依赖于容器就能运行的。</p><p>Spring以IoC、AOP为主要思想，其中IoC，Inversion of Control 指控制反转或反向控制。在Spring框架中我们通过配置创建类对象，由Spring在运行阶段实例化、组装对象。<br>AOP，Aspect Oriented Programming，面向切面编程，其思想是在执行某些代码前执行另外的代码，使程序更灵活、扩展性更好，可以随便地添加、删除某些功能。Servlet中的Filter便是一种AOP思想的实现。</p><p>Spring同时也是一个“一站式”框架，即Spring在JavaEE的三层架构[表现层（Web层）、业务逻辑层（Service层）、数据访问层（DAO层）]中，每一层均提供了不同的解决技术。</p><h4 id="3、持久层框架Mybatis"><a href="#3、持久层框架Mybatis" class="headerlink" title="3、持久层框架Mybatis"></a>3、持久层框架Mybatis</h4><p>MyBatis是一款优秀的持久层框架，它支持定制化SQL、存储过程以及高级映射。它是轻量级持久层框架，由ibatis演化而来。它自动连接数据库，将数据库的结果集封装到对象中POJO。</p><p>Mybatis它是轻量级持久层框架，由ibatis演化而来。它自动连接数据库，将数据库的结果集封装到对象中POJO。</p><h4 id="4、Spring-Boot"><a href="#4、Spring-Boot" class="headerlink" title="4、Spring Boot"></a>4、Spring Boot</h4><p>Spring Boot基本上是Spring框架的扩展，它消除了设置Spring应用程序所需的XML配置，为更快，更高效的开发生态系统铺平了道路。</p><h4 id="5、分布式-微服务Spring-Cloud"><a href="#5、分布式-微服务Spring-Cloud" class="headerlink" title="5、分布式&#x2F;微服务Spring Cloud"></a>5、分布式&#x2F;微服务Spring Cloud</h4><p>Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统基础设施的开发，如服务发现注册、配置中心、消息总线、负载均衡、断路器、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。</p><h4 id="6、安全框架Shiro"><a href="#6、安全框架Shiro" class="headerlink" title="6、安全框架Shiro"></a>6、安全框架Shiro</h4><p>Apache Shiro是一个开源的轻量级的Java安全框架，它提供身份验证、授权、密码管理以及会话管理等功能。相对于Spring Security， Shiro框架更加直观、易用，同时也能提供健壮的安全性。</p><p>Shiro框架相比于Spring Security更加轻量级，但是它也提供了一些基础的，能满足日常开发所需的权限控制功能。</p><h4 id="7、项目管理Maven"><a href="#7、项目管理Maven" class="headerlink" title="7、项目管理Maven"></a>7、项目管理Maven</h4><p>Maven是一个构建工具，这个构建工具能够帮助你更好的管理包的依赖、还能够为你实现项目的热部署、还能为你运行所有的测试用例、还能够为你项目的打包、发布、还能够实现项目的多模块构建。</p><h4 id="8、服务器软件Tomcat"><a href="#8、服务器软件Tomcat" class="headerlink" title="8、服务器软件Tomcat"></a>8、服务器软件Tomcat</h4><p>Tomcat是由Java开发且符合JavaEE的Servlet规范的JSP服务器，是Apache的扩展，其主要特性如下：</p><p>1、主要用于解析JSP&#x2F;Servlet，一般JAVA程序语言都需要Tomcat环境支持；<br>2、支持HTML静态页，但总体运行效率没有Apache高；<br>3、内置了一个HTTP服务器用于支持静态内容，可以通过Tomcat的配置管理工具实现与Apache整合。</p><p>Apache服务器是由C语言实现的，专门用来提供HTTP服务，具有简单、速度快、性能稳定特征优势，主要特性如下：</p><p>1、主要用于解析静态文本，并发性能高，侧重于HTTP服务；<br>2、不支持动态请求如：CGI、Servlet&#x2F;JSP、PHP、ASP等语言；<br>3、可扩展性强，可以通过插件支持PHP语言，特定情况下可与Tomcat实现连通；<br>4、是目前全球用户使用量最高的Web服务器。</p><h2 id="三、中间件"><a href="#三、中间件" class="headerlink" title="三、中间件"></a>三、中间件</h2><h2 id="四、数据库"><a href="#四、数据库" class="headerlink" title="四、数据库"></a>四、数据库</h2><p>常见的数据管理系统主要有：Oracle、Mysql、SQL Server、Access、TiDB。</p><p>这几个数据库优缺点都比较明显，大家可以在网上查询下相关资料，有任何不了解的可以随时沟通交流。</p>]]></content>
       
       
       <categories>
           
-          <category> 摘录 </category>
+          <category> Linux </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> md语言 </tag>
+            <tag> 摘录 </tag>
+            
+            <tag> 命令 </tag>
             
         </tags>
       
@@ -73,6 +75,31 @@
         <tags>
             
             <tag> 必读 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown初级用法</title>
+      <link href="/2023/09/13/markdown/"/>
+      <url>/2023/09/13/markdown/</url>
+      
+        <content type="html"><![CDATA[<p>欢迎阅读该博客，希望你能有所收获！</p><h2 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h2><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档；<br>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建；<br>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档；<br>Markdown 编写的文档后缀为 .md或.markdown；<br>Markdown 能被使用来撰写电子书，如：Gitbook；<br>当今许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、个人博客等。<br>练习方式：</p><p>线上练习：stackedit</p><p>线下安装：typora永久激活版</p><p>提取密码：YYDS</p><p>###一、标题 ###<br>语法如下：</p><p>一个“#”代表：一级标题</p><p>二个“#”代表：二级标题</p><p>……</p><p>六个“#”代表：六级标题</p><p>注意：使用时，“#”后要加上空格才生效</p><p>作用：重要性等级排序</p><h3 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h3><p>2.1 字体<br>语法如下：</p><p>1.一对“*”或“_”代表：斜体</p><p>效果：俊强</p><p>2.一对“**”或“__”代表：加粗</p><p>效果：俊强</p><p>3.一对“***”或“___”代表：斜体+加粗</p><p>效果：俊强</p><p>注意：使用时，用“*”或“_”将要加斜体或加粗的文字包裹起来才生效</p><p>作用：提示、强调、说明和区别，3种方式选1种就可</p><p>2.2 分割线<br>如下：</p><p>三个及其以上“*”或“-”代表：分割线</p><p>效果如下：</p><p>注意：使用时，除空格外一行内不能有其他字符</p><p>作用：能够让正文与其他内容清晰体现，以免造成阅读混乱</p><p>2.3 删除线<br>语法：一对“~~”代表：删除线</p><p>效果：俊强</p><p>作用：对旧的内容进行删除和替换</p><p>使用场景：想换博客域名了，可以这样做：旧博客域名→新博客域名</p><p>2.4 下划线<br>语法：一个u标签“<u></u>”代表：下划线</p><p>效果：俊强</p><p>作用：强调文字引起注意</p><p>2.5 脚注<br>语法：“[^]”代表：脚注</p><p>效果：[^俊强]</p><p>作用：对文本内容的补充说明</p><h3 id="三、列表"><a href="#三、列表" class="headerlink" title="三、列表"></a>三、列表</h3><p>3.1 无序列表<br>语法：一个“*”或一个“+”或一个“-”代表：无序列表</p><p>效果如下：</p><p>俊强<br>玉树<br>临风<br>注意：使用时，“*”后要加上空格才生效</p><p>作用：无序列出内容，直观明了</p><p>3.2 有序列表<br>语法：数字“1.2.3.”代表：有序列表</p><p>效果如下：</p><p>俊强<br>。。。<br>。。。<br>注意：使用时，“1.”后要加上空格才生效</p><p>作用：按顺序列出内容，直观明了</p><p>3.3 列表嵌套<br>语法：有序列表和无序列表混合使用</p><p>效果：</p><p>俊强<br>性格好<br>情绪稳定<br>。。。<br>其他<br>。。。<br>。。。<br>。。。<br>###四、区块 ###<br>语法：一个“&gt;”代表：区块</p><p>效果如下：</p><p>俊强</p><p>好帅</p><p>洒脱</p><p>注意：使用时，“&gt;”后要加上空格才生效，它的效果是4个空格或者一个制表符（Tab键）</p><p>使用场景：在Linux命令、短代码中使用</p><p>4.1 区块列表嵌套<br>语法：区块中嵌套有序列表再嵌套无序列表</p><p>效果如下：</p><p>俊强<br>沉着<br>泠静<br>其他<br>。。。<br>。。。<br>。。。<br>。。。<br>。。。<br>4.2 列表区块嵌套<br>语法：有序列表或无序列表中嵌套区块</p><p>俊强</p><p>帅哥</p><p>洒脱</p><p>其他</p><p>。。。</p><p>。。。</p><p>。。。</p><p>。。。</p><p>。。。</p><p>###五、代码块 ###<br>5.1 Python代码块<br>语法：一对“&#96;&#96;&#96;”代表：代码块</p><p>PYTHON<br>1<br>print(“Hello Markdown!”)<br>注意：使用时，“&#96;&#96;&#96;”后要加上python代表是python代码</p><p>5.2 Java代码块<br>JAVA<br>1<br>2<br>3<br>pubic static void main(String[] args) {<br>  System.out.println(“Hello Markdown!”);<br>}<br>注意：使用时，“&#96;&#96;&#96;”后要加上java代表是java代码</p><p>###六、链接 ###<br>6.1 普通链接<br>方式一<br>语法：“&lt;&gt;”代表：尖括号直接填入链接地址即可</p><p>效果：<a href="https://ljqyyds.com/">https://ljqyyds.com</a></p><p>方式二<br>语法：“<a href=""></a>”代表：中括号填入文字，圆括号填入链接地址</p><p>示例：[J.qiang &amp; 博客]+(<a href="https://ljqyyds.com/">https://ljqyyds.com</a>)</p><p>效果：J.qiang &amp; 博客</p><p>6.2 高级链接<br>方式一：变量<br>语法：“[][]”代表：第一中括号填入文字，第二个中括号填入变量名，最后再为变量名赋值即可</p><p>示例：</p><p>第一中括号写为 [百度]</p><p>第二个中括号写为 [baidu_name]</p><p>变量赋值 [baidu_name]: <a href="https://baidu.com/">https://baidu.com</a></p><p>效果：这是百度网址：百度</p><p>方式二：图片<br>语法：“<a href=""><img src="/"></a>”代表：链接语法嵌套图片语法，第一中括号填入文字，第一个圆括号填入图片地址，第二个圆括号填入链接地址</p><p>效果：</p><p>###七、图片 ###<br>语法：“<img src="/">”代表：图片，第一中括号填入文字，第二个圆括号填入图片地址</p><p>示例：</p><p>###八、表格 ###<br>语法：连续“|”代表：分隔不同的单元格，使用连续“-”代表：分隔表头与其他行</p><p>示例：</p><p>姓名性别年龄<br>俊强男24<br>其他人无无<br>注意：有3种对齐方式，冒号在哪边就是向哪边对齐</p><p>-: 设置内容或标题栏右对齐<br>:- 设置内容或标题栏左对齐<br>:-: 设置内容或标题栏居中对齐<br>###九、高级用法 ###<br>9.1 转义<br>语法：一个“\”代表：转义</p><p>作用：Markdown使用了很多特殊符号来表示特定的意义，需要显示特定的符号时使用转义字符即可</p><p>示例：<strong>加粗</strong></p><p>注意：以下普通符号支持转义</p><p>加 + 减 - 乘 * 井号 #<br>小括号 () 方括号 [] 花括号 {} 尖括号&lt;&gt;<br>反斜杠 \ 反引号 &#96; 叹号 ! 下滑线 _ 英文句号 .<br>9.2 数学公式（博客内显示有点问题）<br>语法：一对“$$”代表：数学公式用美元符号包裹起来</p><p>示例：</p><p>分式：二分之一<br>$$<br>\frac{1}{2}<br>$$</p><p>方程式<br>$$<br>\begin{cases}<br>a_{0}+a_{1}x_{0}+…+a_{n}x_{0}^{n}&#x3D;y_{0} <br>a_{0}+a_{1}x_{1}+…+a_{n}x_{1}^{n}&#x3D;y_{1} <br>\cdots<br>a_{0}+a_{1}x_{n}+…+a_{n}x_{n}^{n}&#x3D;y_{n}<br>\end{cases}<br>$$</p><p>###十、其他 ###<br>10.1 改变字体颜色和大小<br>颜色<br>语法：“<font color=颜色>内容</font>”代表：font标签里加入文字内容即可</p><p>效果：俊强、俊强</p><p>大小<br>语法：“<font size=数字>内容</font>”</p><p>效果：俊强</p><p>10.2 取消超链接显示<br>语法：一对“&#96;”代表：用一对反引号将超链接地址包裹起来</p><p>示例：<a href="https://ljqyyds.com/">https://ljqyyds.com</a></p><p>作者: J.qiang<br>链接: <a href="http://ljqyyds.com/2023/03/31/%E7%AC%AC4%E7%AF%87%EF%BC%9AMarkdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/">http://ljqyyds.com/2023/03/31/%E7%AC%AC4%E7%AF%87%EF%BC%9AMarkdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/</a><br>来源: J.qiang &amp; 博客<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> md语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 摘录 </tag>
             
         </tags>
       
