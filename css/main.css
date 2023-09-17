@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffed73;
+  background: #ff6e4b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2726,10 +2726,4 @@ body {
   background: url("/images/pink.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-.popup-trigger {
-  border: solid 3px transparent;
-  border-image: linear-gradient(to right, #ffc0cb, #87cefa);
-  border-image-slice: 1;
-  border-bottom: 1;
 }
