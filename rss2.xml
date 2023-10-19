@@ -9,14 +9,14 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>All I can say is I was enchanted to meet you~</description>
-    <pubDate>Thu, 12 Oct 2023 14:19:21 GMT</pubDate>
+    <pubDate>Thu, 12 Oct 2023 14:21:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>IT圈中哪些经常被读错的词？</title>
-      <link>http://example.com/2023/09/16/IT%20read/</link>
-      <guid>http://example.com/2023/09/16/IT%20read/</guid>
-      <pubDate>Sat, 16 Sep 2023 12:35:45 GMT</pubDate>
+      <link>http://example.com/2023/10/12/IT%20read/</link>
+      <guid>http://example.com/2023/10/12/IT%20read/</guid>
+      <pubDate>Thu, 12 Oct 2023 12:35:45 GMT</pubDate>
       
       <description>今天看到的一篇很有意思的博客，来看看哪些词还在读错哈哈</description>
       
@@ -33,7 +33,7 @@
       <category domain="http://example.com/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
       
       
-      <comments>http://example.com/2023/09/16/IT%20read/#disqus_thread</comments>
+      <comments>http://example.com/2023/10/12/IT%20read/#disqus_thread</comments>
       
     </item>
     
@@ -102,6 +102,8 @@
       
       <category domain="http://example.com/categories/%E9%9A%8F%E7%AC%94/">随笔</category>
       
+      
+      <category domain="http://example.com/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
       
       <category domain="http://example.com/tags/%E5%BF%85%E8%AF%BB/">必读</category>
       
