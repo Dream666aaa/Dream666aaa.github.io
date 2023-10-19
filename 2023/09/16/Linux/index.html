@@ -30,7 +30,7 @@
 <meta property="og:description" content="Linux常用操作命令大全">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-16T12:35:45.000Z">
-<meta property="article:modified_time" content="2023-09-17T07:28:49.433Z">
+<meta property="article:modified_time" content="2023-10-19T12:35:19.004Z">
 <meta property="article:author" content="Dream">
 <meta property="article:tag" content="摘录">
 <meta property="article:tag" content="命令">
@@ -237,7 +237,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-17 15:28:49" itemprop="dateModified" datetime="2023-09-17T15:28:49+08:00">2023-09-17</time>
+                <time title="修改时间：2023-10-19 20:35:19" itemprop="dateModified" datetime="2023-10-19T20:35:19+08:00">2023-10-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -254,13 +254,13 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>7.6k</span>
+              <span>7.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
-              <span>7 分钟</span>
+              <span>6 分钟</span>
             </span>
             <div class="post-description">Linux常用操作命令大全</div>
 
@@ -273,66 +273,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h2><h4 id="1-1-Linux系统的文件结构"><a href="#1-1-Linux系统的文件结构" class="headerlink" title="1.1 Linux系统的文件结构"></a>1.1 Linux系统的文件结构</h4><p>&#x2F;bin        二进制文件，系统常规命令</p>
-<p>&#x2F;boot       系统启动分区，系统启动时读取的文件</p>
-<p>&#x2F;dev        设备文件</p>
-<p>&#x2F;etc        大多数配置文件</p>
-<p>&#x2F;home       普通用户的家目录</p>
-<p>&#x2F;lib        32位函数库</p>
-<p>&#x2F;lib64      64位库</p>
-<p>&#x2F;media      手动临时挂载点</p>
-<p>&#x2F;mnt        手动临时挂载点</p>
-<p>&#x2F;opt        第三方软件安装位置</p>
-<p>&#x2F;proc       进程信息及硬件信息</p>
-<p>&#x2F;root       临时设备的默认挂载点</p>
-<p>&#x2F;sbin       系统管理命令</p>
-<p>&#x2F;srv        数据</p>
-<p>&#x2F;var        数据</p>
-<p>&#x2F;sys        内核相关信息</p>
-<p>&#x2F;tmp        临时文件</p>
-<p>&#x2F;usr        用户相关设定</p>
-<h4 id="1-2-Linux系统命令行的含义"><a href="#1-2-Linux系统命令行的含义" class="headerlink" title="1.2 Linux系统命令行的含义"></a>1.2 Linux系统命令行的含义</h4><p>示例：root@app00:~# </p>
-<p>root    &#x2F;&#x2F;用户名，root为超级用户</p>
-<p>@       &#x2F;&#x2F;分隔符</p>
-<p>app00   &#x2F;&#x2F;主机名称</p>
-<p>~       &#x2F;&#x2F;当前所在目录，默认用户目录为~，会随着目录切换而变化，</p>
-<p>例如：（root@app00:&#x2F;bin# ，当前位置在bin目录下）<br>      &#x2F;&#x2F;表示当前用户是超级用户，普通用户为$，例如：（”yao@app00:&#x2F;root$” ，表示使用用户”yao”访问&#x2F;root文件夹）</p>
-<h4 id="1-3-命令的组成"><a href="#1-3-命令的组成" class="headerlink" title="1.3 命令的组成"></a>1.3 命令的组成</h4><p>示例：命令 参数名 参数值</p>
-<h2 id="二、基础操作"><a href="#二、基础操作" class="headerlink" title="二、基础操作"></a>二、基础操作</h2><h4 id="2-1-关闭系统"><a href="#2-1-关闭系统" class="headerlink" title="2.1 关闭系统"></a>2.1 关闭系统</h4><p>(1)立刻关机</p>
-<p>  shutdown -h now 或者 poweroff</p>
-<p>(2)两分钟后关机</p>
-<p>  shutdown -h 2</p>
-<h4 id="2-2-关闭重启"><a href="#2-2-关闭重启" class="headerlink" title="2.2 关闭重启"></a>2.2 关闭重启</h4><p>(1)立刻重启<br>  shutdown -r now 或者 reboot</p>
-<p>(2)两分钟后重启<br>  shutdown -r 2 </p>
-<h4 id="2-3-帮助命令（help）"><a href="#2-3-帮助命令（help）" class="headerlink" title="2.3 帮助命令（help）"></a>2.3 帮助命令（help）</h4><p>  ifconfig  –help     &#x2F;&#x2F;查看 ifconfig 命令的用法</p>
-<h4 id="2-4-命令说明书（man）"><a href="#2-4-命令说明书（man）" class="headerlink" title="2.4 命令说明书（man）"></a>2.4 命令说明书（man）</h4><p>  man shutdown         &#x2F;&#x2F;打开命令说明后，可按”q”键退出</p>
-<h4 id="2-5-切换用户（su）"><a href="#2-5-切换用户（su）" class="headerlink" title="2.5 切换用户（su）"></a>2.5 切换用户（su）</h4><p>  su yao               &#x2F;&#x2F;切换为用户”yao”,输入后回车需要输入该用户的密码</p>
-<p>  exit                 &#x2F;&#x2F;退出当前用户</p>
-<h2 id="三、目录操作"><a href="#三、目录操作" class="headerlink" title="三、目录操作"></a>三、目录操作</h2><h4 id="3-1-切换目录（cd）"><a href="#3-1-切换目录（cd）" class="headerlink" title="3.1 切换目录（cd）"></a>3.1 切换目录（cd）</h4><p>  cd &#x2F;                 &#x2F;&#x2F;切换到根目录</p>
-<p>  cd &#x2F;bin              &#x2F;&#x2F;切换到根目录下的bin目录</p>
-<p>  cd ..&#x2F;               &#x2F;&#x2F;切换到上一级目录 或者使用命令：cd ..</p>
-<p>  cd ~                 &#x2F;&#x2F;切换到home目录</p>
-<p>  cd -                 &#x2F;&#x2F;切换到上次访问的目录</p>
-<p>  cd xx(文件夹名)       &#x2F;&#x2F;切换到本目录下的名为xx的文件目录，如果目录不存在报错<br>  cd &#x2F;xxx&#x2F;xx&#x2F;x         &#x2F;&#x2F;可以输入完整的路径，直接切换到目标目录，输入过程中可以使用tab键快速补全</p>
-<h4 id="3-2-查看目录（ls）"><a href="#3-2-查看目录（ls）" class="headerlink" title="3.2 查看目录（ls）"></a>3.2 查看目录（ls）</h4><p>  ls                   &#x2F;&#x2F;查看当前目录下的所有目录和文件</p>
-<p>  ls -a                &#x2F;&#x2F;查看当前目录下的所有目录和文件（包括隐藏的文件）</p>
-<p>  ls -l                &#x2F;&#x2F;列表查看当前目录下的所有目录和文件（列表查看，显示更多信息），与命令”ll”效果一样</p>
-<p>  ls &#x2F;bin              &#x2F;&#x2F;查看指定目录下的所有目录和文件 </p>
-<h4 id="3-3-创建目录（mkdir）"><a href="#3-3-创建目录（mkdir）" class="headerlink" title="3.3 创建目录（mkdir）"></a>3.3 创建目录（mkdir）</h4><p>  mkdir tools          &#x2F;&#x2F;在当前目录下创建一个名为tools的目录</p>
-<p>  mkdir &#x2F;bin&#x2F;tools     &#x2F;&#x2F;在指定目录下创建一个名为tools的目录</p>
-<h4 id="3-3-删除目录与文件（rm）"><a href="#3-3-删除目录与文件（rm）" class="headerlink" title="3.3 删除目录与文件（rm）"></a>3.3 删除目录与文件（rm）</h4><p>  rm 文件名              &#x2F;&#x2F;删除当前目录下的文件</p>
-<p>  rm -f 文件名           &#x2F;&#x2F;删除当前目录的的文件（不询问）</p>
-<p>  rm -r 文件夹名         &#x2F;&#x2F;递归删除当前目录下此名的目录</p>
-<p>  rm -rf 文件夹名        &#x2F;&#x2F;递归删除当前目录下此名的目录（不询问）</p>
-<p>  rm -rf *              &#x2F;&#x2F;将当前目录下的所有目录和文件全部删除</p>
-<p>rm -rf &#x2F;*             &#x2F;&#x2F;将根目录下的所有文件全部删除【慎用！相当于格式化系统】</p>
-<h4 id="3-4-修改目录（mv）"><a href="#3-4-修改目录（mv）" class="headerlink" title="3.4 修改目录（mv）"></a>3.4 修改目录（mv）</h4><p>  mv 当前目录名 新目录名        &#x2F;&#x2F;修改目录名，同样适用与文件操作</p>
-<p>  mv &#x2F;usr&#x2F;tmp&#x2F;tool &#x2F;opt       &#x2F;&#x2F;将&#x2F;usr&#x2F;tmp目录下的tool目录剪切到 &#x2F;opt目录下面</p>
-<p>  mv -r &#x2F;usr&#x2F;tmp&#x2F;tool &#x2F;opt    &#x2F;&#x2F;递归剪切目录中所有文件和文件夹</p>
-<h4 id="3-5-拷贝目录（cp）"><a href="#3-5-拷贝目录（cp）" class="headerlink" title="3.5 拷贝目录（cp）"></a>3.5 拷贝目录（cp）</h4><p>  cp &#x2F;usr&#x2F;tmp&#x2F;tool &#x2F;opt       &#x2F;&#x2F;将&#x2F;usr&#x2F;tmp目录下的tool目录复制到 &#x2F;opt目录下面</p>
-<p>  cp -r &#x2F;usr&#x2F;tmp&#x2F;tool &#x2F;opt    &#x2F;&#x2F;递归剪复制目录中所有文件和文件夹</p>
-<h4 id="3-6-搜索目录（find）"><a href="#3-6-搜索目录（find）" class="headerlink" title="3.6 搜索目录（find）"></a>3.6 搜索目录（find）</h4><p>  find &#x2F;bin -name ‘a*’        &#x2F;&#x2F;查找&#x2F;bin目录下的所有以a开头的文件或者目录</p>
-<h4 id="3-7-查看当前目录（pwd）"><a href="#3-7-查看当前目录（pwd）" class="headerlink" title="3.7 查看当前目录（pwd）"></a>3.7 查看当前目录（pwd）</h4><p>  pwd                         &#x2F;&#x2F;显示当前位置路径</p>
+        <h2 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h2><h4 id="1-1-Linux系统的文件结构"><a href="#1-1-Linux系统的文件结构" class="headerlink" title="1.1 Linux系统的文件结构"></a>1.1 Linux系统的文件结构</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">/bin        二进制文件，系统常规命令</span><br><span class="line"></span><br><span class="line">/boot       系统启动分区，系统启动时读取的文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/dev        设备文件</span><br><span class="line"></span><br><span class="line">/etc        大多数配置文件</span><br><span class="line"></span><br><span class="line">/home       普通用户的家目录</span><br><span class="line"></span><br><span class="line">/lib        <span class="number">32</span>位函数库</span><br><span class="line"></span><br><span class="line">/lib64      <span class="number">64</span>位库</span><br><span class="line"></span><br><span class="line">/media      手动临时挂载点</span><br><span class="line"></span><br><span class="line">/mnt        手动临时挂载点</span><br><span class="line"></span><br><span class="line">/opt        第三方软件安装位置</span><br><span class="line"></span><br><span class="line">/proc       进程信息及硬件信息</span><br><span class="line"></span><br><span class="line">/root       临时设备的默认挂载点</span><br><span class="line"></span><br><span class="line">/sbin       系统管理命令</span><br><span class="line"></span><br><span class="line">/srv        数据</span><br><span class="line"></span><br><span class="line">/var        数据</span><br><span class="line"></span><br><span class="line">/sys        内核相关信息</span><br><span class="line"></span><br><span class="line">/tmp        临时文件</span><br><span class="line"></span><br><span class="line">/usr        用户相关设定</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-Linux系统命令行的含义"><a href="#1-2-Linux系统命令行的含义" class="headerlink" title="1.2 Linux系统命令行的含义"></a>1.2 Linux系统命令行的含义</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">示例：root@app00:~<span class="meta"># </span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">root    <span class="comment">//用户名，root为超级用户</span></span></span><br><span class="line"></span><br><span class="line">@       <span class="comment">//分隔符</span></span><br><span class="line"></span><br><span class="line">app00   <span class="comment">//主机名称</span></span><br><span class="line"></span><br><span class="line">~       <span class="comment">//当前所在目录，默认用户目录为~，会随着目录切换而变化，</span></span><br><span class="line"></span><br><span class="line">例如：（root@app00:/bin# ，当前位置在bin目录下）</span><br><span class="line">      <span class="comment">//表示当前用户是超级用户，普通用户为$，例如：（&quot;yao@app00:/root$&quot; ，表示使用用户&quot;yao&quot;访问/root文件夹）</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-3-命令的组成"><a href="#1-3-命令的组成" class="headerlink" title="1.3 命令的组成"></a>1.3 命令的组成</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">示例：命令 参数名 参数值</span><br></pre></td></tr></table></figure>
+<h2 id="二、基础操作"><a href="#二、基础操作" class="headerlink" title="二、基础操作"></a>二、基础操作</h2><h4 id="2-1-关闭系统"><a href="#2-1-关闭系统" class="headerlink" title="2.1 关闭系统"></a>2.1 关闭系统</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(<span class="number">1</span>)立刻关机</span><br><span class="line"></span><br><span class="line">  shutdown -h now 或者 poweroff</span><br><span class="line"></span><br><span class="line">(<span class="number">2</span>)两分钟后关机</span><br><span class="line"></span><br><span class="line">  shutdown -h <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-关闭重启"><a href="#2-2-关闭重启" class="headerlink" title="2.2 关闭重启"></a>2.2 关闭重启</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="number">1</span>)立刻重启</span><br><span class="line">  shutdown -r now 或者 reboot</span><br><span class="line"></span><br><span class="line">(<span class="number">2</span>)两分钟后重启</span><br><span class="line">  shutdown -r <span class="number">2</span> </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="2-3-帮助命令（help）"><a href="#2-3-帮助命令（help）" class="headerlink" title="2.3 帮助命令（help）"></a>2.3 帮助命令（help）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig  --help     <span class="comment">//查看 ifconfig 命令的用法</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-4-命令说明书（man）"><a href="#2-4-命令说明书（man）" class="headerlink" title="2.4 命令说明书（man）"></a>2.4 命令说明书（man）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">man shutdown         <span class="comment">//打开命令说明后，可按&quot;q&quot;键退出</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-5-切换用户（su）"><a href="#2-5-切换用户（su）" class="headerlink" title="2.5 切换用户（su）"></a>2.5 切换用户（su）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">su yao               <span class="comment">//切换为用户&quot;yao&quot;,输入后回车需要输入该用户的密码</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">exit</span>                 <span class="comment">//退出当前用户</span></span><br></pre></td></tr></table></figure>
+<h2 id="三、目录操作"><a href="#三、目录操作" class="headerlink" title="三、目录操作"></a>三、目录操作</h2><h4 id="3-1-切换目录（cd）"><a href="#3-1-切换目录（cd）" class="headerlink" title="3.1 切换目录（cd）"></a>3.1 切换目录（cd）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cd /                 <span class="comment">//切换到根目录</span></span><br><span class="line"></span><br><span class="line">cd /bin              <span class="comment">//切换到根目录下的bin目录</span></span><br><span class="line"></span><br><span class="line">cd ../               <span class="comment">//切换到上一级目录 或者使用命令：cd ..</span></span><br><span class="line"></span><br><span class="line">cd ~                 <span class="comment">//切换到home目录</span></span><br><span class="line"></span><br><span class="line">cd -                 <span class="comment">//切换到上次访问的目录</span></span><br><span class="line"></span><br><span class="line">cd <span class="title function_">xx</span><span class="params">(文件夹名)</span>       <span class="comment">//切换到本目录下的名为xx的文件目录，如果目录不存在报错</span></span><br><span class="line">cd /xxx/xx/x         <span class="comment">//可以输入完整的路径，直接切换到目标目录，输入过程中可以使用tab键快速补全</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-2-查看目录（ls）"><a href="#3-2-查看目录（ls）" class="headerlink" title="3.2 查看目录（ls）"></a>3.2 查看目录（ls）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ls                   <span class="comment">//查看当前目录下的所有目录和文件</span></span><br><span class="line"></span><br><span class="line">ls -a                <span class="comment">//查看当前目录下的所有目录和文件（包括隐藏的文件）</span></span><br><span class="line"></span><br><span class="line">ls -l                <span class="comment">//列表查看当前目录下的所有目录和文件（列表查看，显示更多信息），与命令&quot;ll&quot;效果一样</span></span><br><span class="line"></span><br><span class="line">ls /bin              <span class="comment">//查看指定目录下的所有目录和文件 </span></span><br></pre></td></tr></table></figure>
+<h4 id="3-3-创建目录（mkdir）"><a href="#3-3-创建目录（mkdir）" class="headerlink" title="3.3 创建目录（mkdir）"></a>3.3 创建目录（mkdir）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir tools          <span class="comment">//在当前目录下创建一个名为tools的目录</span></span><br><span class="line"></span><br><span class="line">mkdir /bin/tools     <span class="comment">//在指定目录下创建一个名为tools的目录</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-3-删除目录与文件（rm）"><a href="#3-3-删除目录与文件（rm）" class="headerlink" title="3.3 删除目录与文件（rm）"></a>3.3 删除目录与文件（rm）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">  rm 文件名              <span class="comment">//删除当前目录下的文件</span></span><br><span class="line"></span><br><span class="line">  rm -f 文件名           <span class="comment">//删除当前目录的的文件（不询问）</span></span><br><span class="line"></span><br><span class="line">  rm -r 文件夹名         <span class="comment">//递归删除当前目录下此名的目录</span></span><br><span class="line"></span><br><span class="line">  rm -rf 文件夹名        <span class="comment">//递归删除当前目录下此名的目录（不询问）</span></span><br><span class="line"></span><br><span class="line">  rm -rf *              <span class="comment">//将当前目录下的所有目录和文件全部删除</span></span><br><span class="line">  </span><br><span class="line">rm -rf <span class="comment">/*             //将根目录下的所有文件全部删除【慎用！相当于格式化系统】</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-4-修改目录（mv）"><a href="#3-4-修改目录（mv）" class="headerlink" title="3.4 修改目录（mv）"></a>3.4 修改目录（mv）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mv 当前目录名 新目录名        <span class="comment">//修改目录名，同样适用与文件操作</span></span><br><span class="line"></span><br><span class="line">mv /usr/tmp/tool /opt       <span class="comment">//将/usr/tmp目录下的tool目录剪切到 /opt目录下面</span></span><br><span class="line"></span><br><span class="line">mv -r /usr/tmp/tool /opt    <span class="comment">//递归剪切目录中所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-5-拷贝目录（cp）"><a href="#3-5-拷贝目录（cp）" class="headerlink" title="3.5 拷贝目录（cp）"></a>3.5 拷贝目录（cp）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/tmp/tool /opt       <span class="comment">//将/usr/tmp目录下的tool目录复制到 /opt目录下面</span></span><br><span class="line"></span><br><span class="line">cp -r /usr/tmp/tool /opt    <span class="comment">//递归剪复制目录中所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-6-搜索目录（find）"><a href="#3-6-搜索目录（find）" class="headerlink" title="3.6 搜索目录（find）"></a>3.6 搜索目录（find）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find /bin -name <span class="string">&#x27;a*&#x27;</span>        <span class="comment">//查找/bin目录下的所有以a开头的文件或者目录</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-7-查看当前目录（pwd）"><a href="#3-7-查看当前目录（pwd）" class="headerlink" title="3.7 查看当前目录（pwd）"></a>3.7 查看当前目录（pwd）</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwd                         <span class="comment">//显示当前位置路径</span></span><br></pre></td></tr></table></figure>
 <h2 id="四、文件操作"><a href="#四、文件操作" class="headerlink" title="四、文件操作"></a>四、文件操作</h2><h4 id="4-1-新增文件（touch）"><a href="#4-1-新增文件（touch）" class="headerlink" title="4.1 新增文件（touch）"></a>4.1 新增文件（touch）</h4><p>   touch  a.txt         &#x2F;&#x2F;在当前目录下创建名为a的txt文件（文件不存在），如果文件存在，将文件时间属性修改为当前系统时间</p>
 <h4 id="4-2-删除文件（rm）"><a href="#4-2-删除文件（rm）" class="headerlink" title="4.2 删除文件（rm）"></a>4.2 删除文件（rm）</h4><p>  rm 文件名              &#x2F;&#x2F;删除当前目录下的文件</p>
 <p>  rm -f 文件名           &#x2F;&#x2F;删除当前目录的的文件（不询问）</p>
@@ -667,12 +625,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">25k</span>
+    <span title="站点总字数">24k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">23 分钟</span>
+    <span title="站点阅读时长">22 分钟</span>
 </div>
 
         
